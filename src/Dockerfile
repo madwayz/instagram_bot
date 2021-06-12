@@ -8,7 +8,7 @@ ADD requirements.txt .
 
 RUN apt update -y
 
-RUN apt install postgresql postgresql-contrib
+RUN apt install -y postgresql postgresql-contrib
 RUN apt install -y chromium-browser chromium-chromedriver
 RUN apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev
 RUN apt install -y libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
