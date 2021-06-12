@@ -16,7 +16,6 @@ class Processor:
 
     def upload_post_data(self, profile, post):
         post.update({'profile': profile})
-        print('Надо загрузить', post)
         post_url_dict = {'url': post.get('url')}
         if self.provider.is_uploaded(post_url_dict):
             return
